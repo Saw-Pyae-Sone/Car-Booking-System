@@ -1,0 +1,40 @@
+.stars {
+    display: inline-block;
+    }
+    input[type="radio"] {
+    display: none;
+    }
+
+    #star-1:before {
+    content: "\f005";
+    }
+
+    #star-2:before {
+    content: "\f005";
+    }
+
+    #star-3:before {
+    content: "\f005";
+    }
+
+    #star-4:before {
+    content: "\f005";
+    }
+
+    #star-5:before {
+    content: "\f005";
+    }
+
+    label:before {
+    margin: 7px;
+    padding-left: 40px;
+    font-size: 1.5em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f006";
+    }
+
+    input[type="radio"]:checked ~ label:before {
+    content: "\f005";
+    color: #FFC107;
+    }

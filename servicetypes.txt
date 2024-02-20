@@ -1,0 +1,43 @@
+			-> Motorcycle -> $25	A normal motorcycle wash includes a basic exterior wash of the car's body, wheels, and tires, using soap and water to remove dirt and grime. 
+	-> Normal
+			-> Car -> $50 A normal car wash includes a basic exterior wash of the car's body, wheels, and tires, using soap and water to remove dirt and grime. 
+Wash
+ 			-> Motorcycle -> $50  A Premium motorcycle wash includes detailing, interior cleaning of your motorcycle, and wash with premium soap. 
+ 	-> Premium
+			-> Car -> $100 A Premium car wash includes detailing, interior cleaning of your car, and wash with premium soap. 
+
+
+
+				-> Motorcycle -> $50 Glass polish can be used to remove minor scratches and blemishes from motorcycle windshields and other glass surfaces.
+	-> Glass Polish
+				-> Car -> $100 Glass polish can be used to remove minor scratches and blemishes from car windshields and other glass surfaces.
+
+Polish		
+	
+				-> Motorcycle -> $50 Using a paint body polish on a motorcycle can restore the paint finish's shine and helps to protect the paint finish from future damage.
+	-> Paint Body Polish
+				-> Car -> $100 Using a paint body polish on a car can restore the paint finish's shine and helps to protect the paint finish from future damage.
+
+
+				-> Motorcycle -> $50 PBC provides a protective layer on top of a motorcycle's paintwork to keep the paint looking new and shiny for longer.
+	->Paint Body Coating  
+				-> Car -> $100 PBC provides a protective layer on top of a Car's paintwork to keep the paint looking new and shiny for longer.
+
+Coating
+
+				-> Motorcycle -> $50 Glass coating is a protective layer that can be applied to the surface of a motorcycle's glass components, like windshield or mirrors.
+	-> glass coating
+				-> Car -> $100 Glass coating is a protective layer that can be applied to the surface of a car's glass components, like windshield or mirrors
+
+
+				-> Motorcycle -> $25 Engine bay wash involves a thorough cleaning of a motorcycle's engine bay using specialized cleaning products and equipment.
+Engine Bay -> premium only
+				-> Car -> $50 Engine bay wash involves a thorough cleaning of a car's engine bay using specialized cleaning products and equipment.
+
+					-> Motorcycle -> $20 Headlight restoration is a process of restoring the clarity of headlights that have become yellowed, hazy, or foggy over time.
+Headlight restore -> premium only
+					-> Car -> $40 Headlight restoration is a process of restoring the clarity of headlights that have become yellowed, hazy, or foggy over time.
+				
+						-> Motorcycle -> $100 Paint protection film is a durable film that is applied to the surface of a motorcycle's painted bodywork to protect it.
+PFF (Paint protection film)-> premium only
+						-> Car -> $200 Paint protection film is a durable film that is applied to the surface of a car's painted bodywork to protect it.

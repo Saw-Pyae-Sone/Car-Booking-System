@@ -1,0 +1,66 @@
+<?php
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+    include 'connection.php';
+
+    if(isset($_COOKIE['AS_ID']) && !isset($_SESSION['AS_email']))
+    {
+         // Retrieve user's information from the server using the session identifier stored in the cookie
+        $session_id = $_COOKIE['AS_ID'];
+        $query = "SELECT admin_email, admin_password FROM B_admin WHERE AS_ID = '$session_id'";
+        $result = mysqli_query($connect, $query);
+        if (mysqli_num_rows($result) > 0) 
+        {
+            $admin = mysqli_fetch_assoc($result);
+
+            // Store the retrieved information in a session variable
+            $_SESSION['AS_email'] = $admin['admin_email'];
+            $_SESSION['AS_password'] = $admin['admin_password'];
+        }
+    }
+
+    if(isset($_POST['btnlogin']))
+    {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        $data = "SELECT * FROM B_admin WHERE admin_email = '$email'";
+        $login = mysqli_query($connect, $data);
+
+        if($login->num_rows > 0)
+        {   
+            $fetch = mysqli_fetch_assoc($login);
+            $hashed_password = $fetch['admin_password'];
+            if(password_verify($password, $hashed_password)) 
+            {
+                if (isset($_POST['remember_me']) && $_POST['remember_me'] == 'yes') {
+                     // Generate a session identifier and store it in the cookie
+                    $session_id = md5($email . time());
+                    setcookie("AS_ID", $session_id, time() + (30 * 24 * 60 * 60)); // expires in 30 days
+                    // Store the session identifier and the user's information on the server
+                    $query = "INSERT INTO A_session (AS_ID, AS_email, AS_password) VALUES ('$session_id', '$email', '$hashed_password')";
+                    $result = mysqli_query($connect, $query);
+
+                    if ($result) {
+                        echo "<script>alert('Session identifier and user information stored successfully in the database');</script>";
+                    } else {
+                        echo "<script>alert('Failed to store session identifier and user information in the database');</script>";
+                    }
+                }
+
+                $_SESSION['email'] = $email;
+                $_SESSION['password'] = $hashed_password;
+                echo "<script>alert('Successfully Logged In!');</script>";
+                echo "<script>window.open('index.php','_self');</script>";
+            }
+            else
+            {
+                echo "<script>alert('Password is incorrect');</script>";
+            }
+        }
+        else
+        {
+            $msg = 'Email is incorrect';
+        }                                                          
+    }
+?>

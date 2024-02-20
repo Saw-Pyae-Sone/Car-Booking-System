@@ -1,0 +1,88 @@
+INSERT INTO booking(BK_ID,BK_name,BK_phone,BK_email,BK_comment,BK_dropoff_time,BK_date,BK_vehicle,BK_confirm,BK_pay,BK_cancel,S_ID,C_ID) VALUES
+('2','Pyae','09653987265','Pyae34@gmail.com','Take care of my motocycle','1 to 3','2023-03-30','motocycle','Confirmed','Paid','Uncancelled','13','1'),
+
+('3','sam','09545546546','sawpyaesone23@gmail.com','Take care of my motocycle','1 to 3','2023-03-30','motocycle','Confirmed','Paid','Uncancelled','11','1'),
+
+('4','Paing','09782635482','pyhoewinn@gmail.com','My car is really dirty','9 to 12','2023-04-03','car','Confirmed','Paid','Uncancelled','4','3'),
+
+('5','Pyae Sone','65465465458','arkar@gmail.com','Take care of my car','1 to 3','2023-04-03','car','Confirmed','Paid','Uncancelled','6','2'),
+
+('6','Aung','09635412367','kyiphyuaung16@gmail.com','Take care of my motocycle','9 to 12','2023-04-04','motocycle','Confirmed','Paid','Uncancelled','13','4'),
+
+('7','Thant','03158964823','kyiphyuthant206@gmail.com','Take care of my motocycle','1 to 3','2023-04-04','motocycle','Confirmed','Paid','Uncancelled','15','5'),
+
+('8','Tun','09782635412','chitko41322@gmail.com','Take care of my car','1 to 3','2023-04-04','Car','Confirmed','Unpaid','Cancelled','16','6'),
+
+('9','Pyae Sone','65465465458','arkar@gmail.com','Take care of my motocycle','9 to 12','2023-04-05','motocycle','Confirmed','Paid','Uncancelled','13','2'),
+
+('10','sam','09545546546','sawpyaesone23@gmail.com','Take care of my motocycle','1 to 3','2023-04-05','motocycle','Confirmed','Paid','Uncancelled','13','1'),
+
+('11','sam','09545546546','sawpyaesone23@gmail.com','Take care of my motocycle','9 to 12','2023-04-05','motocycle','Confirmed','Unpaid','Cancelled','13','1'),
+
+('12','Thant','03158964823','kyiphyuthant206@gmail.com','Take care of my car','1 to 3','2023-04-6','car','Confirmed','Paid','Uncancelled','18','5'),
+
+('13','sam','09545546546','sawpyaesone23@gmail.com','Take care of my car','9 to 12','2023-04-6','car','Confirmed','Paid','Uncancelled','14','1'),
+
+('14','Tun','09782635412','chitko41322@gmail.com','Take care of my car','1 to 3','2023-04-07','car','Confirmed','Paid','Uncancelled','18','6'),
+
+('15','Aung','09635412367','kyiphyuaung16@gmail.com','Take care of my motocycle','9 to 12','2023-04-07','motocycle','Confirmed','Unpaid','Cancelled','15','4'),
+
+('16','sam','09545546546','sawpyaesone23@gmail.com','Take care of my motocycle','1 to 3','2023-04-07','motocycle','Confirmed','Paid','Uncancelled','7','1'),
+
+('17','Hlaing','09365482637','saihlaingkhay6677@gmail.com','Take care of my car','9 to 12','2023-04-08','car','Confirmed','Paid','uncancelled','10','9'),
+
+('18','Myat','09362587456','ayemyatmoncumdy@gmail.com','Take care of my car','1 to 3','2023-04-08','car','Confirmed','Paid','Cancelled','12','8'),
+
+('19','Moe','09658234687','mmoewint@gmail.com','Take care of my motocycle','9 to 3','2023-04-26','motocycle','Unconfirm','Unpaid','Uncancelled','17','10'),
+
+('20','Peachy','09632536871','Peachy@gmail.com','Take care of my motocycle','1 to 3','2023-04-26','motocycle','Unconfirm','Unpaid','Uncancelled','15','30'),
+
+('21','sam','09545546546','sawpyaesone23@gmail.com','Take care of my motocycle','9 to 12','2023-04-26','motocycle','Unconfirm','Unpaid','Uncancelled','17','1'),
+
+('22','Peachy','09632536871','Peachy@gmail.com','Take care of my car','9 to 12','2023-04-27','car','Unconfirm','Unpaid','Uncancelled','18','30'),
+
+('23','Peachy','09632536871','Peachy@gmail.com','Take care of my car','1 to 3','2023-04-27','car','Unconfirm','Unpaid','Uncancelled','12','30'),
+
+('24','sam','09632536871','sawpyaesone23@gmail.com','Take care of my car','9 to 12','2023-04-24','car','Unconfirm','Unpaid','Uncancelled','10','1'),
+
+('25','Peachy','09632536871','Peachy@gmail.com','Take care of my car','1 to 3','2023-04-24','car','Unconfirm','Unpaid','Uncancelled','18','30'),
+
+('26','Aung','09635412367','kyiphyuaung16@gmail.com','Take care of my motocycle','1 to 3','2023-04-25','motocycle','Unconfirm','Unpaid','Uncancelled','15','4'),
+
+('27','Peachy','09632536871','Peachy@gmail.com','Take care of my motocycle','9 to 12','2023-04-25','motocyle','Unconfirm','Unpaid','Uncancelled','17','30'),
+
+('28','Hlaing','09365482637','saihlaingkhay6677@gmail.com','Take care of my motocycle','1 to 3','2023-04-25','motocycle','Unconfirm','Unpaid','Uncancelled','17','9'),
+
+('29','Myint','09653269874','Myint2333@gmail.com','Take care of my car','1 to 3','2023-05-03','car','Unconfirm','Unpaid','Uncancelled','12','12'),
+
+('30','Yoon','09581236482','Yoon12@gmail.com','Take care of my motocycle','1 to 3','2023-05-05','motocycle','Unconfirm','Unpaid','Uncancelled','7','13'),
+
+('31','Peachy','09632536871','Peachy@gmail.com','Take care of my car','9 to 12','2023-05-05','car','Unconfirm','Unpaid','Uncancelled','12','30'),
+
+('32','Bang','09125489678','xinbang6634@gmail.com','Take care of my motocycle','1 to 3','2023-05-05','motocycle','Unconfirm','Unpaid','Uncancelled','13','11'),
+
+('33','Leo','09863548261','Leo33@gmail.com','Take care of my motocycle','1 to 3','2023-05-04','motocycle','Unconfirm','Unpaid','Uncancelled','3','29'),
+
+('34','sam','09545546546','sawpyaesone23@gmail.com','Take care of my motocycle','9 to 12','2023-05-01','motocycle','Unconfirm','Unpaid','Uncancelled','9','1'),
+
+('35','Kyaw','09536214825','Kyaw230@gmail.com','Take care of my car','1 to 3','2023-05-02','car','Unconfirm','Unpaid','Uncancelled','14','14'),
+
+('36','Myint','09653269874','Myint2333@gmail.com','Take care of my car','9 to 12','2023-05-08','car','Unconfirm','Unpaid','Uncancelled','12','12'),
+
+('37','Hlaing','09365482637','saihlaingkhay6677@gmail.com','Take care of my car','1 to 3','2023-05-08','car','Unconfirm','Unpaid','Uncancelled','12','9'),
+
+('38','Yoon','09581236482','Yoon12@gmail.com','Take care of my motocycle','1 to 3','2023-05-09','motocycle','Unconfirm','Unpaid','Uncancelled','7','13'),
+
+('39','Leo','09863548261','Leo33@gmail.com','Take care of my motocycle','9 to 12','2023-05-09','motocycle','Unconfirm','Unpaid','Uncancelled','9','29'),
+
+('40','Bang','09125489678','xinbang6634@gmail.com','Take care of my motocycle','1 to 3','2023-05-09','motocycle','Unconfirm','Unpaid','Uncancelled','11','11'),
+
+('41','Peachy','09632536871','Peachy@gmail.com','Take care of my car','9 to 12','2023-05-11','car','Unconfirm','Unpaid','Uncancelled','12','30'),
+
+('42','sam','09545546546','sawpyaesone23@gmail.com','Take care of my car','1 to 3','2023-05-11','car','Unconfirm','Unpaid','Uncancelled','18','1'),
+
+('43','Yoon','09581236482','Yoon12@gmail.com','Take care of my motocycle','9 to 12','2023-05-12','motocycle','Unconfirm','Unpaid','Uncancelled','17','13'),
+
+('44','Myint','09653269874','Myint2333@gmail.com','Take care of my car','1 to 3','2023-05-15','car','Unconfirm','Unpaid','Uncancelled','10','12'),
+
+('45','Kyaw','09536214825','Kyaw230@gmail.com','Take care of my motocycle','1 to 3','2023-05-13','motocycle','Unconfirm','Unpaid','Uncancelled','13','14');

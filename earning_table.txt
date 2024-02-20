@@ -1,0 +1,58 @@
+  <div class="card">
+                                <div class="card-body card_block">
+
+                                <h5 id="addrow" class="pb-2 mb-2">Monthly Earnings of <?php echo date('Y') ?></h5>
+								<div class="bd-example">
+                                    <div class="table-responsive">
+                                        <table id="add-row" class="display table table-striped table-hover" cellspacing="0" width="100%">
+                                            <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Month</th>
+                                                        <th>Total Earnings</th>
+                                                    </tr>
+                                                </thead>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Month</th>
+                                                        <th>Total Earnings</th>
+                                                    </tr>
+                                                </tfoot>
+                                                <tbody>
+                                                <?php
+                                                    error_reporting();
+                                                    include 'connection.php';
+
+                                                    $year = date('Y');
+
+                                                    $fetch = "SELECT SUM(s.S_price) as total_earnings, MONTHNAME(b.BK_date) as month_name
+                                                    FROM services s
+                                                    JOIN booking b ON b.S_ID = s.S_ID
+                                                    WHERE YEAR(b.BK_date) = '$year'
+                                                    GROUP BY MONTH(b.BK_date)";
+                                                    $run = mysqli_query($connect,$fetch);
+                                                    $count = mysqli_num_rows($run);
+
+                                                    $counter = 1;
+                                                    for ($i=0; $i < $count ; $i++) 
+                                                    { 
+                                                            $data = mysqli_fetch_array($run);
+                                                    ?>
+                                                        <tr>
+                                                            <td><?php echo $counter;?></td>
+                                                            <td><?php echo $data['month_name'];?></td>
+                                                            <td><?php echo $data['total_earnings'];?></td>
+                                                        </tr>
+                                                    <?php
+                                                        $counter++;
+                                                        } 
+                                                    ?>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
